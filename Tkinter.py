@@ -27,3 +27,12 @@ frame_prodi.pack(fill="x", pady=15)
 
 lbl_prodi = tk.Label(frame_prodi, text="Pilih Prodi / Jurusan:", anchor="w")
 lbl_prodi.pack(anchor="w")
+
+daftar_prodi = [
+    "Teknik Mesin", "Teknik Sipil", "Teknologi Informasi", 
+    "Artificial Intelligence", "Elektro Medis", "Teknik Elektro"
+]
+
+combo_prodi = tk.Combobox(frame_prodi, values=daftar_prodi, state="readonly")
+combo_prodi.pack(fill="x", pady=5)
+combo_prodi.current(2)
