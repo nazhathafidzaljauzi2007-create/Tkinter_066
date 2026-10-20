@@ -3,7 +3,7 @@ from tkinter import ttk
 
 root = tk.Tk()
 root.title("Aplikasi Prediksi Prodi Pilihan")
-root.geometry("400x300")
+root.geometry("400x700")
 root.configure(padx=20, pady=20)
 
 labeljudul = tk.Label(root, text="Aplikasi Prediksi Prodi Pilihan")
@@ -34,7 +34,7 @@ daftar_prodi = [
     "Artificial Intelligence", "Elektro Medis", "Teknik Elektro"
 ]
 
-combo_prodi = tk.Combobox(frame_prodi, values=daftar_prodi, state="readonly")
+combo_prodi = ttk.Combobox(frame_prodi, values=daftar_prodi, state="readonly")
 combo_prodi.pack(fill="x", pady=5)
 combo_prodi.current(2)
 
