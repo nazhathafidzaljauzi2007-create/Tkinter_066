@@ -21,3 +21,9 @@ for i, mapel in enumerate(Listmapel):
     entry = tk.Entry(frame_input, width=15)
     entry.grid(row=i, column=1, padx=10, pady=2)
     entries.append(entry)
+
+frame_prodi = tk.Frame(root)
+frame_prodi.pack(fill="x", pady=15)
+
+lbl_prodi = tk.Label(frame_prodi, text="Pilih Prodi / Jurusan:", anchor="w")
+lbl_prodi.pack(anchor="w")
