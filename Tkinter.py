@@ -39,8 +39,7 @@ combo_prodi.pack(fill="x", pady=5)
 combo_prodi.current(2)
 
 def PrediksiProdi():
-    prodi_terpilih = combo_prodi.get()
-    labelhasil.config(text=f"Hasil Prediksi: {prodi_terpilih}", fg="green")
+    labelhasil.config(text="Hasil Prediksi: Teknologi Informasi", fg="green")
 
 btnPrediksi = tk.Button(
     root, 
