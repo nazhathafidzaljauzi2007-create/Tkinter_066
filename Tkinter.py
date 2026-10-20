@@ -50,3 +50,11 @@ btnPrediksi = tk.Button(
     pady=5
 )
 btnPrediksi.pack(pady=10)
+
+labelhasil = tk.Label(
+    root, 
+    text="Hasil Prediksi: -"
+)
+labelhasil.pack()
+
+root.mainloop()
