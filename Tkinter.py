@@ -36,3 +36,7 @@ daftar_prodi = [
 combo_prodi = tk.Combobox(frame_prodi, values=daftar_prodi, state="readonly")
 combo_prodi.pack(fill="x", pady=5)
 combo_prodi.current(2)
+
+def PrediksiProdi():
+    prodi_terpilih = combo_prodi.get()
+    labelhasil.config(text=f"Hasil Prediksi: {prodi_terpilih}", fg="green")
